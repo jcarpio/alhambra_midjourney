@@ -26,5 +26,14 @@ find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ### 2. Download files
 cat 22_01_00.html | ./get_img.pl
 
+### 3. Compress Folder and download new file
+
+### 4. Create Thumbnails
+
+### 5. Delete png bigfiles
+
+### 6. Modify html file to change png for jpg file extensions
+
+
 
 
