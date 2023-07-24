@@ -1,2 +1,17 @@
 # alhambra_midjourney
 Alhambra Midjourney Project
+
+## Shell commands
+
+### Compress folder
+tar cvfz cdn.discordapp.com.tgz cdn.discordapp.com
+
+### Create Thumbnails
+mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
+
+### Find files
+find *.jpg cdn.discordapp.com/
+
+### Create full path copy
+rsync -R cdn.discordapp.com/attachments/945077390839787570/1132078866664534077/slyfoxsyndicate_Alhambrainlessness_996954b5-1eae-479c-8421-c25940c54614.png /root/.
+
