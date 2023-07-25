@@ -39,6 +39,9 @@ cat 22_01_00.html | ./get_img.pl
 ```
 ### 3. Compress Folder and download new file
 
+```
+tar cvfz cdn.discordapp.com_png.tgz cdn.discordapp.com
+```
 ### 4. Create Thumbnails
 ```
 mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
@@ -49,8 +52,8 @@ mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
 find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ```
 
-
 ### 6. Modify html file to change png for jpg file extensions
+For that, I used notepad++ macros to add navigation menu, replace .png extensions to .jpg extensions and to replace image file address from "http//" to "./"
 
 
 
