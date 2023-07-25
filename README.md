@@ -4,14 +4,14 @@ Alhambra Midjourney Project
 ## Shell commands
 
 ### Compress folder
-``
+```
 tar cvfz cdn.discordapp.com.tgz cdn.discordapp.com
-``
+```
 
 ### Create Thumbnails
-``
+```
 mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
-``
+```
 
 ### Find files
 find *.jpg cdn.discordapp.com/
