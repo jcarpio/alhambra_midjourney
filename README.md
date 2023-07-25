@@ -24,11 +24,15 @@ find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ### 1. Upload HTML file previously created with Discort Chat Exporter Chrome extension
 
 ### 2. Download files
+```
 cat 22_01_00.html | ./get_img.pl
-
+```
 ### 3. Compress Folder and download new file
 
 ### 4. Create Thumbnails
+```
+mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
+```
 
 ### 5. Delete png bigfiles
 
