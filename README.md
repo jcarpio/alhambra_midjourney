@@ -15,7 +15,7 @@ mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
 
 ### Find files
 ```
-find *.jpg cdn.discordapp.com/
+find -name "*.jpg" cdn.discordapp.com/
 ```
 
 ### Create full path copy
