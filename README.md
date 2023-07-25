@@ -31,7 +31,7 @@ find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ```
 
 ## Download files process
-### 1. Upload HTML file previously created with Discort Chat Exporter Chrome extension
+### 1. Upload HTML file previously created with Discord Chat Exporter Chrome extension
 
 ### 2. Download files
 ```
