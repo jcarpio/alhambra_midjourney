@@ -37,10 +37,10 @@ find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ```
 cat 22_01_00.html | ./get_img.pl
 ```
-### 3. Compress Folder and download new file
+### 3. Save png full size files and download new file
 
 ```
-tar cvfz cdn.discordapp.com_png.tgz cdn.discordapp.com
+tar cvfz cdn.discordapp.com_22_23_50_png.tgz cdn.discordapp.com
 ```
 ### 4. Create Thumbnails
 ```
@@ -51,8 +51,17 @@ mogrify -format jpg -thumbnail 480 `find . -name '*.png'`
 ```
 find cdn.discordapp.com -name "*.png" -exec /bin/rm {} \;
 ```
+### 6. Save jpg files
+´´´
+tar cvfz cdn.discordapp.com_22_23_50_jpg.tgz cdn.discordapp.com/
+´´´
 
-### 6. Modify html file to change png for jpg file extensions
+### 7. Copy jpg files to web server
+´´´´
+cp -R cdn.discordapp.com/ /var/www/html/.
+´´´´
+
+### 8. Modify html file to change png for jpg file extensions
 For that, I used notepad++ macros to add navigation menu, replace .png extensions to .jpg extensions and to replace image file address from "http//" to "./"
 
 
